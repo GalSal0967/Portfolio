@@ -1,0 +1,110 @@
+/* Estilizando o header */
+
+body {
+    background-color: #131313;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #131313;
+    color: white;
+  }
+  
+  /* Logo (nome do Gabriel) */
+  .logo {
+    font-size: 24px;
+    color: rgb(0, 71, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Menu de navegação */
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    color: rgba(148, 148, 148, 0.589);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  
+  .nav-links h3 {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .nav-links h3:hover {
+    color: #ffffff;
+  }
+  
+  /* Ícones sociais */
+  .socials i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .socials i:hover {
+    color: rgb(0, 71, 177);
+  }
+
+  .nav-links h3 {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .nav-links h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(0, 71, 177);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links h3:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links .active::after {
+    width: 100%;
+  }
+  
+
+
+.apresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* 🔥 alinha os textos à esquerda */
+    padding: 60px 20px;
+    background-color: #181818;
+    gap: 6px;
+    max-width: 500px; /* controla a largura máxima */
+    margin: 0 auto;    /* centraliza a div no meio da tela */
+    height: auto;      /* deixa a altura se ajustar ao conteúdo */
+}
+  
+  
+
+ .color-blue {
+    color: rgb(0, 71, 177);; 
+    font-family: Arial, Helvetica, sans-serif;  
+ }
+
+ .apresentation h1 , p {
+    color: #e6e6e6; 
+    font-family: Arial, Helvetica, sans-serif;  
+ }
+  
+ 
+ .apresentation p,
+ .apresentation h1,
+ .apresentation h2 {
+  margin: 1px 0; /* reduz o espaço vertical entre os textos */
+ }
+
