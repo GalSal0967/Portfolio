@@ -178,3 +178,51 @@ a {
   text-decoration: none; /* remove sublinhado */
   color: inherit; /* herda a cor do h3 */
 }
+
+
+.texts-top {
+    text-align: center;
+}
+
+.texts-top h2 {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texts-top p  {
+    color: rgb(0, 71, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: linear-gradient(to right, white, rgb(0, 71, 177));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.primeira-linha-projeto {
+    display: flex;
+    gap: 40px;
+}
+
+.boxe {
+    background-color: #201f1e;
+    width: 350px;  /* largura fixa */
+    height: 350px;  /* altura fixa */
+    border-radius: 20px;
+}
+
+.boxe img {
+    width: 330px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxe h2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
