@@ -202,27 +202,63 @@ a {
 }
 
 .primeira-linha-projeto {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 30px; /* Espaco entre os itens */
 }
 
 .boxe {
+    width: 370px;
     background-color: #201f1e;
-    width: 350px;  /* largura fixa */
-    height: 350px;  /* altura fixa */
+    box-sizing: border-box;
     border-radius: 20px;
 }
 
 .boxe img {
     width: 330px;
     height: 200px;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .boxe h2 {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.boxe p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagemprojetos {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.textosprojeto {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.ferramentas_projeto {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 71, 177);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.git_share {
+  color: #ffffff;
+  padding: 20px;
+}
+
+.boxe2 {
+  background-color: #201f1e;
+      width: 330px;
+      height: 200px;
 }
