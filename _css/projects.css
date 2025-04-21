@@ -207,19 +207,48 @@ a {
 }
 
 .boxe {
-    width: 370px;
+    width: 420px;
     background-color: #201f1e;
     box-sizing: border-box;
     border-radius: 20px;
 }
 
-.boxe img {
-    width: 330px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+
+
+
+.imagem_banner_portfolio {
+  border: solid rgb(0, 71, 177);;
+  object-fit: cover; /* 🔥 Preenche sem distorcer */
+  width: 330px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  
+}
+
+.imagem_banner_calculadora {
+  border: solid green;
+  object-fit: cover; /* 🔥 Preenche sem distorcer */
+  width: 330px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.imagem_banner_coffe {
+  border: solid rgb(61, 24, 0);
+  object-position: left;
+  object-fit: cover; /* 🔥 Preenche sem distorcer */
+  width: 330px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
 }
 
 .boxe h2 {
@@ -227,6 +256,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
+    margin: 0;
 }
 
 .boxe p {
@@ -262,3 +292,9 @@ a {
       width: 330px;
       height: 200px;
 }
+
+.img_calculadora {
+  width: 100px;
+  height: 200;
+}
+
