@@ -178,3 +178,45 @@ a {
   text-decoration: none; /* remove sublinhado */
   color: inherit; /* herda a cor do h3 */
 }
+
+/*
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* começa mais abaixo 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* volta pra posição normal 
+  }
+}
+
+/* Animação para o h2 (Web Developer) 
+.apresentation h2 {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0; /* começa invisível até a animação rodar 
+}
+*/
+
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 2px solid white; /* o cursor */
+  font-size: 30px;
+  width: 0;
+  animation: typing 2.5s steps(13) forwards, blink 0.7s infinite;
+}
+
+/* animação para "digitar" */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 13ch } /* 13 caracteres: "Web Developer" */
+}
+
+/* animação para o cursor piscar */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}

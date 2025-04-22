@@ -309,3 +309,27 @@ a {
   text-decoration: none; /* remove sublinhado */
   color: inherit; /* herda a cor do h3 */
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* começa mais abaixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* volta pra posição normal */
+  }
+}
+
+/* Animação para o h2 (Web Developer) */
+.texto-aboutme img {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0; /* começa invisível até a animação rodar */
+}
+
+.textos p {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0; /* começa invisível até a animação rodar */
+}

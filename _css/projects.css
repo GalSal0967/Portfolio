@@ -211,9 +211,13 @@ a {
     background-color: #201f1e;
     box-sizing: border-box;
     border-radius: 20px;
+    cursor: pointer;
 }
 
-
+.boxe:hover {
+  transform: scale(1.05);
+  background-color: #1c1c1c;
+}
 
 
 .imagem_banner_portfolio {
@@ -298,3 +302,13 @@ a {
   height: 200;
 }
 
+.boxe {
+  transform: scale(0);         /* começa pequena */
+  animation: crescer 0.8s ease-out forwards;
+}
+
+@keyframes crescer {
+  to {
+    transform: scale(1);       /* cresce até o tamanho normal */
+  }
+}
