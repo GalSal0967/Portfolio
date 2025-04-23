@@ -307,6 +307,10 @@ a {
   animation: crescer 0.8s ease-out forwards;
 }
 
+.boxe:hover {
+    transform: scale(1.05);
+}
+
 @keyframes crescer {
   to {
     transform: scale(1);       /* cresce até o tamanho normal */
