@@ -333,3 +333,14 @@ a {
   animation-delay: 0.5s;
   opacity: 0; /* começa invisível até a animação rodar */
 }
+
+.coluna1_tools {
+  display: none;
+  gap: 30px; /* Espaco entre os itens */
+  padding-top: 35px;  /* padding pra cima, fazendo ele ir mais para baixo */
+  padding-left: 60px; /* Espaco para o lado*/
+}
+
+.icone_github_card {
+  font-size: 30px;
+}
