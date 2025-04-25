@@ -1,0 +1,212 @@
+/* Estilizando o header */
+
+body {
+    background-color: #131313;
+    padding: 0 345px; /* 👈 Cria espaço de 20px nas laterais */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #131313;
+    color: white;
+    
+  }
+  
+  /* Logo (nome do Gabriel) */
+  .logo {
+    font-size: 24px;
+    color: rgb(0, 71, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Menu de navegação */
+  
+  .nav-links {
+    display: flex;
+    align-items: center; /* garante que fique alinhado no meio */
+    gap: 30px;
+  }
+  
+
+  .nav-links a {
+    color: rgba(148, 148, 148, 0.589);
+    font-size: 22px;  /* Tamanho do texto dos links de navegacao*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center; /* garante que fique alinhado no meio */
+    gap: 30px;
+  }
+  
+  
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  /* Ícones sociais */
+  .socials i {
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .socials i:hover {
+    color: rgb(0, 71, 177);
+  }
+
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(0, 71, 177);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links .active::after {
+    width: 100%;
+  }
+  
+
+
+  .apresentation {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Pode remover se não for necessário, pois usaremos flex */
+    align-items: center; /* Isso vai centralizar os itens dentro do contêiner */
+    padding: 50px 20px;
+    padding-top: 10px;
+    gap: 12px;
+    animation: aparecer 1s ease-out forwards; /* 1s é a duração, você pode ajustar */
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .alinhar-divs {
+    display: flex;
+    flex-direction: column; /* Coloca h1 e h2 um embaixo do outro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 70px;
+  }
+  
+  .apresentation h1, p {
+    color: #e6e6e6; 
+    font-family: Arial, Helvetica, sans-serif;  
+  }
+  
+  .apresentation h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  .apresentation h2 {
+    color: rgb(0, 71, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to right, white, rgb(0, 71, 177));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+  }
+  
+  .apresentation p,
+  .apresentation h1,
+  .apresentation h2 {
+    margin: 0;
+    text-align: center; /* Alinha os textos ao centro */
+  }
+  
+
+a {
+  text-decoration: none; /* remove sublinhado */
+  color: inherit; /* herda a cor do h3 */
+}
+
+
+
+.contact_me {
+    background-color: #201f1e;
+    display: flex;
+    padding: 30px; 
+    border-radius: 30px;
+    margin-bottom: 60px;      /* 👈 Cria espaço embaixo pra o que vier depois */
+    margin: 0 auto;           /* 👈 Centraliza a caixa na tela */
+    max-width: 470px;        /* 👈 Limita a largura total */
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInUp 1s ease-out forwards; /* 1s é a duração, você pode ajustar */
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* começa mais abaixo */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* volta pra posição normal */
+    }
+  }
+
+.textos_contact h2 {
+    margin: 25px 0 2px 0; /* top, right, bottom, left */
+    display: flex;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.textos_contact p {
+    margin-top: 8px; /* ou 2px, ou até 0px se quiser colado */
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+
+.icone {
+    font-size: 40px;
+    color: rgb(0, 71, 177);
+    margin-top: 20px;
+}
+
+.caixa {
+    display: flex;
+    align-items: flex-start; /* importante para alinhar o topo do ícone com o texto */
+    gap: 20px;
+}
+
+.alinhar_contact {
+    padding-left: 65px;
+}

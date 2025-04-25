@@ -206,7 +206,7 @@ a {
   border-right: 2px solid white; /* o cursor */
   font-size: 30px;
   width: 0;
-  animation: typing 2.5s steps(13) forwards, blink 0.7s infinite;
+  animation: typing 1s steps(13) forwards, blink 0.7s infinite;
 }
 
 /* animação para "digitar" */
